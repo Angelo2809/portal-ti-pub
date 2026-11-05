@@ -1,0 +1,56 @@
+.motion-auth{position:relative;isolation:isolate;min-height:100vh;min-height:100svh;display:grid;grid-template-columns:minmax(0,1fr);place-items:center;overflow:hidden;background:#001b4e;color:#fff;padding:54px 24px}
+.login-motion-canvas{position:absolute;z-index:-2;inset:0;width:100%;height:100%;display:block}
+.login-vignette{position:absolute;z-index:-1;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 48%,transparent 26%,rgba(0,8,20,.38) 100%)}
+.motion-brand{position:absolute;top:9.5%;left:6.8%;font-size:clamp(21px,2vw,30px);font-weight:400;letter-spacing:.3em;line-height:1.2;text-shadow:0 2px 15px #020e1f;white-space:nowrap}
+.motion-brand span{color:#009bff}
+.motion-brand i{display:block;width:80px;height:2px;background:linear-gradient(90deg,#00b7ff,#0066ff);margin-top:18px;box-shadow:0 0 12px rgba(0,150,255,.65)}
+.motion-auth .auth-right{width:min(420px,100%);min-width:0;z-index:1;padding:0}
+.motion-auth .auth-card{width:100%;max-width:none;background:linear-gradient(135deg,rgba(250,253,255,.98),rgba(245,249,253,.97));color:#0b1734;border:1px solid rgba(255,255,255,.88);box-shadow:0 24px 80px rgba(0,8,20,.38),0 0 38px rgba(0,120,255,.15);border-radius:18px;padding:32px 36px 28px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.motion-auth .auth-card h2{font-size:30px;line-height:1.1;letter-spacing:-.045em;color:#0b1734;margin:0 0 7px;font-weight:750}
+.motion-auth .auth-card>p{color:#697ba4;font-size:14px;line-height:1.5;margin:0 0 24px}
+.motion-auth .auth-card label{display:block;color:#101a35;font-size:13px;font-weight:500;margin:0 0 16px}
+.motion-auth .auth-card input{height:46px;width:100%;border:1px solid #cbd6eb;border-radius:11px;background:rgba(255,255,255,.5);color:#172440;font-size:14px;padding:0 13px;margin-top:8px;outline:0}
+.motion-auth .auth-card input::placeholder{color:#8493b8}
+.motion-auth .auth-card input:focus{border-color:#0085ff;box-shadow:0 0 0 3px rgba(0,133,255,.16)}
+.motion-auth .input-icon{position:relative;display:block;color:#677ca8}
+.motion-auth .input-icon>svg{position:absolute;left:16px;top:20px;pointer-events:none}
+.motion-auth .input-icon input{padding-left:47px}
+.motion-auth .input-icon input[type=password],.motion-auth .input-icon input[type=text]{padding-right:53px}
+.motion-auth .password-toggle{position:absolute;right:9px;top:11px;width:36px;height:40px;padding:0;display:grid;place-items:center;border:0;background:transparent;color:#687cac;border-radius:6px}
+.motion-auth .password-toggle:hover,.motion-auth .password-toggle:focus-visible{background:#e8eef7;color:#283e6b}
+.motion-auth .auth-submit{height:50px;width:100%;display:flex;align-items:center;justify-content:center;gap:24px;background:linear-gradient(115deg,#008cff,#0040c9);color:#fff;border:1px solid #168fff;box-shadow:0 9px 20px rgba(0,87,220,.16);border-radius:12px;font-size:18px;font-weight:500;margin:22px 0 0;transition:filter .2s,transform .2s}
+.motion-auth .auth-submit:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.motion-auth .login-help{color:#67799f;font-size:12px;line-height:1.55;text-align:center;margin:18px 0 0}
+.motion-auth .hint{color:#697ba4}
+.motion-auth .auth-secure{display:flex;align-items:center;justify-content:center;gap:8px;color:#6a7da7;font-size:11px;margin-top:20px;white-space:nowrap}
+.motion-auth .auth-secure svg{flex:none}
+.motion-auth .auth-secure span{height:1px;flex:1;background:#bdcbe3}
+.motion-footer{position:absolute;left:5.6%;bottom:5.4%;display:flex;align-items:center;gap:9px;color:#fff;font-size:16px;text-shadow:0 2px 10px #031225}
+.motion-footer img{height:56px;width:42px;object-fit:contain}
+.motion-footer .selectto-wordmark{width:147px;height:43px;object-fit:contain;object-position:left center}
+@media(max-width:850px){.motion-auth{padding:105px 20px 105px;overflow:auto}.motion-auth .auth-right{width:min(420px,100%)}.motion-brand{top:29px;left:28px;font-size:23px}.motion-brand i{margin-top:11px;width:66px}.motion-footer{left:28px;bottom:23px}.motion-footer img{height:41px;width:31px}.motion-footer .selectto-wordmark{height:33px;width:113px}}
+@media(max-width:520px){.motion-auth{padding:95px 16px;min-height:100svh}.motion-auth .auth-card{padding:28px 24px;border-radius:19px}.motion-auth .auth-card h2{font-size:28px}.motion-auth .auth-card>p{font-size:14px;margin-bottom:22px}.motion-auth .auth-card label{font-size:14px;margin-bottom:16px}.motion-auth .auth-card input{height:46px;font-size:14px}.motion-auth .input-icon>svg{top:20px}.motion-auth .password-toggle{top:11px}.motion-auth .auth-submit{height:50px;font-size:18px;margin-top:22px}.motion-auth .auth-secure{font-size:11px;gap:8px;margin-top:20px}.motion-auth .login-help{font-size:12px;margin-top:17px}.motion-footer{font-size:13px}}
+@media(max-height:760px) and (min-width:851px){.motion-auth{padding:30px 24px}.motion-auth .auth-card{padding-top:28px;padding-bottom:25px}.motion-auth .auth-card>p{margin-bottom:22px}.motion-auth .auth-card label{margin-bottom:15px}.motion-auth .auth-submit{margin-top:18px;height:50px}.motion-auth .auth-secure{margin-top:19px}.motion-auth .login-help{margin-top:16px}}
+@media(prefers-reduced-motion:reduce){.motion-auth *, .motion-auth *::before, .motion-auth *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.motion-auth .password-toggle svg{position:static}
+
+.motion-brand{display:flex;align-items:center;gap:32px;top:6.5%;left:5.2%}.motion-brand .login-client-logo{width:170px;height:76px;object-fit:contain}.motion-brand-title{border-left:1px solid #b9d4ff;padding-left:32px}.motion-brand i{margin-top:16px}.motion-auth .auth-submit:focus-visible{outline:3px solid #65bdff;outline-offset:3px}
+@media(max-width:850px){.motion-brand{top:24px;left:28px;gap:20px}.motion-brand .login-client-logo{width:128px;height:56px}.motion-brand-title{padding-left:20px;font-size:23px}.motion-brand i{margin-top:10px}}
+@media(max-width:520px){.motion-auth{padding-top:130px;padding-bottom:105px}.motion-brand{top:24px;left:24px;right:24px;gap:16px}.motion-brand .login-client-logo{width:112px;height:52px}.motion-brand-title{padding-left:16px;font-size:19px;letter-spacing:.2em}.motion-brand i{width:58px}}
+
+.login-client-logo{position:relative;display:block;flex:none}.login-client-logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;filter:brightness(0) invert(1)}.login-client-logo img.login-client-symbol{display:none}
+.demo-panel{padding:14px;margin:0 0 20px;border:1px solid #79b7ec;border-radius:10px;background:#edf6ff;color:#193650}
+.demo-panel p{font-size:12px;line-height:1.5;margin:7px 0}
+.demo-panel .demo-accounts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.demo-panel button{border:1px solid #8bb3d3;background:#fff;color:#164b73;border-radius:8px;padding:10px 12px;font-size:12px;text-align:left;cursor:pointer}
+.demo-panel button strong,.demo-panel button span{display:block}
+.demo-panel button strong{font-size:13px}
+.demo-panel button span{font-size:11px;margin-top:4px}
+.demo-panel button:hover{background:#d8ebff}
+.demo-panel button[aria-pressed=true]{background:#d8ebff;border-color:#1671bc;box-shadow:0 0 0 1px #1671bc}
+.demo-panel button:focus-visible{outline:3px solid #1671bc;outline-offset:2px}
+.demo-panel button:disabled{cursor:wait}
+.demo-panel small{display:block;font-size:11px;overflow-wrap:anywhere}
+@media(max-width:360px){.demo-panel .demo-accounts{grid-template-columns:1fr}}
+.demo-notice{background:#edf6ff;color:#164b73;border:1px solid #a4ccef}

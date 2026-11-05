@@ -1,0 +1,34 @@
+{
+  "name": "portal-ti",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:front\"",
+    "dev:server": "node --env-file-if-exists=.env --watch server/index.js",
+    "dev:front": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "demo": "node scripts/demo.mjs",
+    "demo:serve": "node scripts/demo.mjs --serve"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "motion": "^13.5.1",
+    "mssql": "^12.7.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sanitize-html": "^2.17.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "concurrently": "^9.1.2",
+    "vite": "^7.1.0"
+  },
+  "description": "Selectto IT service portal: requester and support workspaces, SLA tracking and a self-contained demo",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
+}
